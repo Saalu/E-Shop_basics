@@ -8,6 +8,15 @@ body {
 	margin: 0;
 }
 
+body,
+input,
+select,
+button,
+textarea {
+	font-size: 1.6rem;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
 .grid-container {
 	display: grid;
 	grid-template-areas: 'header' 'main' 'footer';
@@ -19,6 +28,12 @@ body {
 header {
 	grid-area: header;
 	background: #1d2433;
+	display: flex;
+	align-items: center;
+}
+header .logo a {
+	padding: 2rem;
+	text-decoration: none;
 	color: #ff0057;
 }
 
@@ -46,7 +61,7 @@ footer {
 }
 
 .main {
-	background: #444;
+	background: #ccd6f6;
 	flex: 3 60rem;
 }
 
@@ -81,13 +96,17 @@ footer {
 	max-height: 37rem;
 }
 
+.product a {
+	text-decoration: none;
+}
+
 .product-price {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.product-price div,
+.product-price p,
 .product-price button {
 	text-align: center;
 	flex: 1;
